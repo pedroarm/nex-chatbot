@@ -1,8 +1,14 @@
+const dotenv = require('dotenv')
+if (process.env.NODE_ENV !== 'production') 
+  dotenv.config()
+
+const { BOT_TOKEN } = process.env
+
 const Discord = require('discord.js')
 
 const bot = new Discord.Client()
 
-bot.login('Nzc4NjcwNDg4MzAxOTk0MDg0.X7VXZw.KL8EukgI5tpktmWtUBUrTfKYiA8')
+bot.login(BOT_TOKEN)
 
 bot.on('message', message => {
   if (message.content === 'Seja bem vindo NEX!') {
