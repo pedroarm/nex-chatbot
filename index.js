@@ -44,7 +44,7 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === 'oi nex') {
+  if (message.content === 'oi nex' || 'Oi nex' || 'OI NEX') {
     message.reply(`Oi ${message.author.username}, é um prazer ver você aqui!`)
     message.reply(`${message.author.username}, você pode digitar /ajuda quando precisar.`)
   }
