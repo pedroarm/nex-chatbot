@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 const bot = new Discord.Client()
 
-bot.login('Nzc4NjcwNDg4MzAxOTk0MDg0.X7VXZw.vFQBreGvQXtzQH6onypG_SIm2tE')
+bot.login('Nzc4NjcwNDg4MzAxOTk0MDg0.X7VXZw.KL8EukgI5tpktmWtUBUrTfKYiA8')
 
 bot.on('message', message => {
   if (message.content === 'Seja bem vindo NEX!') {
