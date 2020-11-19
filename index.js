@@ -44,7 +44,21 @@ bot.on('message', message => {
 })
 
 bot.on('message', message => {
-  if (message.content === 'oi nex' || 'Oi nex' || 'OI NEX') {
+  if (message.content === 'oi nex') {
+    message.reply(`Oi ${message.author.username}, é um prazer ver você aqui!`)
+    message.reply(`${message.author.username}, você pode digitar /ajuda quando precisar.`)
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === 'Oi nex') {
+    message.reply(`Oi ${message.author.username}, é um prazer ver você aqui!`)
+    message.reply(`${message.author.username}, você pode digitar /ajuda quando precisar.`)
+  }
+})
+
+bot.on('message', message => {
+  if (message.content === 'Oi NEX') {
     message.reply(`Oi ${message.author.username}, é um prazer ver você aqui!`)
     message.reply(`${message.author.username}, você pode digitar /ajuda quando precisar.`)
   }
